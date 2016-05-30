@@ -1,0 +1,79 @@
+.right-pannel {
+  background: #f4f4f4;
+  position: fixed !important;
+  top: 50px;
+  right: 0;
+  bottom: 100px;
+
+  min-width: 280px;
+  height: inherit;
+
+  border: 1px solid #a9a9a9;
+  box-shadow: 0px 0px 10px #7d7d7d;
+
+  padding: 0px;
+  padding-top: 15px;
+
+  overflow-y: auto;
+
+  z-index: 1000;
+
+  #header-title-2 {
+    display: inline-block;
+    padding-left: 15px;
+    margin: 3px 0px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+    
+    .badge {
+    padding: 7px;
+    margin-left: 5px;
+    font-size: 10px;
+    background-color: @mainColor;
+  }
+
+  .reset {
+    display: inline-block;
+    float: right;
+    width: auto;
+    border: none;
+    color: darkgray;
+    font-size: 12px;
+    padding: 2px;
+    margin-top: 7px;
+  }
+
+  .ordered-display {
+    height: inherit;
+  }
+    
+  .pan-footer {
+    background: lighten(@mainColor, 80%);
+
+    height: 100px;
+    width: inherit;
+    min-width: 280px;
+
+    position: inherit;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #a9a9a9;
+
+    .order {
+      display: block;
+      height: auto;
+      width: 50%;
+      text-align: center;
+      font-size: 17px;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      margin-left: 25%;
+      margin-right: 25%;
+      border-radius: 100px;
+      font-weight: bold;
+      background-color: @mainColor;
+      border-color: @mainColor
+    }
+  }
+}
