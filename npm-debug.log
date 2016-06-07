@@ -1,0 +1,96 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '–g',
+1 verbose cli   'grunt-cli' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of E:\JavaScript\labs\Pizza\package.json
+5 warn package.json Pizza@1.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from E:\JavaScript\labs\Pizza\node_modules\basil.js\package.json
+7 verbose installManyTop reading scoped package data from E:\JavaScript\labs\Pizza\node_modules\brfs\package.json
+8 verbose installManyTop reading scoped package data from E:\JavaScript\labs\Pizza\node_modules\ejs\package.json
+9 verbose installManyTop reading scoped package data from E:\JavaScript\labs\Pizza\node_modules\grunt\package.json
+10 verbose installManyTop reading scoped package data from E:\JavaScript\labs\Pizza\node_modules\grunt-browserify\package.json
+11 verbose installManyTop reading scoped package data from E:\JavaScript\labs\Pizza\node_modules\grunt-contrib-watch\package.json
+12 info package.json basil.js@0.4.3 No repository field.
+13 info package.json basil.js@0.4.3 No license field.
+14 info package.json grunt-browserify@4.0.1 No license field.
+15 info package.json grunt-contrib-watch@0.6.1 No license field.
+16 info package.json grunt@0.4.5 No license field.
+17 verbose readDependencies loading dependencies from E:\JavaScript\labs\Pizza\package.json
+18 silly cache add args [ '–g', null ]
+19 verbose cache add spec –g
+20 silly cache add args [ 'grunt-cli', null ]
+21 verbose cache add spec grunt-cli
+22 silly cache add parsed spec Result {
+22 silly cache add   raw: '–g',
+22 silly cache add   scope: null,
+22 silly cache add   name: null,
+22 silly cache add   rawSpec: '–g',
+22 silly cache add   spec: 'E:\\JavaScript\\labs\\Pizza\\–g',
+22 silly cache add   type: 'local' }
+23 silly cache add parsed spec Result {
+23 silly cache add   raw: 'grunt-cli',
+23 silly cache add   scope: null,
+23 silly cache add   name: 'grunt-cli',
+23 silly cache add   rawSpec: '',
+23 silly cache add   spec: 'latest',
+23 silly cache add   type: 'tag' }
+24 silly addNamed grunt-cli@latest
+25 verbose addNamed "latest" is being treated as a dist-tag for grunt-cli
+26 info addNameTag [ 'grunt-cli', 'latest' ]
+27 silly mapToRegistry name grunt-cli
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'grunt-cli',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   name: 'grunt-cli',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/grunt-cli
+32 verbose addNameTag registry:https://registry.npmjs.org/grunt-cli not in flight; fetching
+33 error addLocal Could not install E:\JavaScript\labs\Pizza\–g
+34 verbose request uri https://registry.npmjs.org/grunt-cli
+35 verbose request no auth needed
+36 info attempt registry request try #1 at 21:40:49
+37 verbose request id 99be4a3bb1b2c5ad
+38 verbose etag "YA82KG6OIE3UNQW6I4JEIZ8G"
+39 http request GET https://registry.npmjs.org/grunt-cli
+40 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+41 info attempt registry request try #2 at 21:40:59
+42 verbose etag "YA82KG6OIE3UNQW6I4JEIZ8G"
+43 http request GET https://registry.npmjs.org/grunt-cli
+44 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+45 info attempt registry request try #3 at 21:41:59
+46 verbose etag "YA82KG6OIE3UNQW6I4JEIZ8G"
+47 http request GET https://registry.npmjs.org/grunt-cli
+48 silly get cb [ 304, undefined ]
+49 verbose etag https://registry.npmjs.org/grunt-cli from cache
+50 verbose get saving grunt-cli to C:\Users\Андрій\AppData\Roaming\npm-cache\registry.npmjs.org\grunt-cli\.cache.json
+51 verbose correctMkdir C:\Users\Андрій\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+52 silly addNameTag next cb for grunt-cli with tag latest
+53 silly addNamed grunt-cli@1.2.0
+54 verbose addNamed "1.2.0" is a plain semver version for grunt-cli
+55 silly cache afterAdd grunt-cli@1.2.0
+56 verbose afterAdd C:\Users\Андрій\AppData\Roaming\npm-cache\grunt-cli\1.2.0\package\package.json not in flight; writing
+57 verbose correctMkdir C:\Users\Андрій\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+58 verbose afterAdd C:\Users\Андрій\AppData\Roaming\npm-cache\grunt-cli\1.2.0\package\package.json written
+59 verbose stack Error: ENOENT: no such file or directory, open 'E:\JavaScript\labs\Pizza\–g'
+59 verbose stack     at Error (native)
+60 verbose cwd E:\JavaScript\labs\Pizza
+61 error Windows_NT 6.1.7601
+62 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "–g" "grunt-cli"
+63 error node v4.4.5
+64 error npm  v2.15.5
+65 error path E:\JavaScript\labs\Pizza\–g
+66 error code ENOENT
+67 error errno -4058
+68 error syscall open
+69 error enoent ENOENT: no such file or directory, open 'E:\JavaScript\labs\Pizza\–g'
+69 error enoent This is most likely not a problem with npm itself
+69 error enoent and is related to npm not being able to find a file.
+70 verbose exit [ -4058, true ]

@@ -12,27 +12,25 @@
   box-shadow: 0px 0px 10px #7d7d7d;
 
   padding: 0px;
-  padding-top: 15px;
 
   overflow-y: auto;
 
   z-index: 1000;
+    
+    .header{
+        background-color: white;
+        padding-bottom: 4px;
+        padding-top: 4px;
+    }
 
-  #header-title-2 {
+  #title-right {
     display: inline-block;
     padding-left: 15px;
     margin: 3px 0px;
     font-weight: bold;
     font-size: 20px;
-  }
+    }
     
-    .badge {
-    padding: 7px;
-    margin-left: 5px;
-    font-size: 10px;
-    background-color: @mainColor;
-  }
-
   .reset {
     display: inline-block;
     float: right;
@@ -59,6 +57,24 @@
     right: 0;
     bottom: 0;
     border: 1px solid #a9a9a9;
+      
+    .total-price-text {
+      display: inline-block;
+      font-size: 17px;
+      font-weight: bold;
+      margin: 5px;
+      margin-bottom: 15px;
+      float: left;
+    }
+
+    .total-price {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 5px;
+      margin-bottom: 15px;
+      float: right;
+    }
 
     .order {
       display: block;
@@ -70,10 +86,10 @@
       margin-bottom: 10%;
       margin-left: 25%;
       margin-right: 25%;
-      border-radius: 100px;
+      border-radius: 5px;
       font-weight: bold;
-      background-color: @mainColor;
-      border-color: @mainColor
+      background-color: darken(@mainColor, 10%);
+      border-color: darken(@mainColor, 10%);
     }
   }
 }

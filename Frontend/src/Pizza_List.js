@@ -26,7 +26,8 @@ var pizza_info = [
             price: 169
         },
         is_new:true,
-        is_popular:true
+        is_popular:true,
+        two_sizes: true
 
     },
     {
@@ -50,7 +51,8 @@ var pizza_info = [
             size: 40,
             price: 199
         },
-        is_popular:true
+        is_popular:true,
+        two_sizes: true
     },
     {
         id:3,
@@ -72,7 +74,8 @@ var pizza_info = [
             weight: 780,
             size: 40,
             price: 179
-        }
+        },
+        two_sizes: true
     },
     {
         id:4,
@@ -94,7 +97,8 @@ var pizza_info = [
             weight: 790,
             size: 40,
             price: 169
-        }
+        },
+        two_sizes: true
     },
     {
         id:17,
@@ -110,7 +114,8 @@ var pizza_info = [
             weight: 370,
             size: 30,
             price: 89
-        }
+        },
+        only_small: true
     },
     {
         id:43,
@@ -133,13 +138,14 @@ var pizza_info = [
             weight: 780,
             size: 40,
             price: 180
-        }
+        },
+        two_sizes: true
     },
     {
         id:90,
         icon:'assets/images/pizza_8.jpg',
         title: "Дольче Маре",
-        type: 'Морська піца',
+        type: 'Піца з морепродуктами',
         content: {
             ocean: ['криветки тигрові', 'мідії', 'ікра червона', 'філе червоної риби'],
             cheese: ['сир моцарелла'],
@@ -149,13 +155,14 @@ var pizza_info = [
             weight: 845,
             size: 40,
             price: 399
-        }
+        },
+        only_big: true
     },
     {
         id:6,
         icon:'assets/images/pizza_4.jpg',
         title: "Россо Густо",
-        type: 'Морська піца',
+        type: 'Піца з морепродуктами',
         content: {
             ocean: ['ікра червона', 'лосось копчений'],
             cheese: ['сир моцарелла'],
@@ -170,8 +177,10 @@ var pizza_info = [
             weight: 700,
             size: 40,
             price: 299
-        }
+        },
+        two_sizes: true
     }
 ];
+
 
 module.exports = pizza_info;

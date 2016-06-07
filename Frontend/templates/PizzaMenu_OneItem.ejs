@@ -1,5 +1,4 @@
 <%
-
 function getIngredientsArray(pizza) {
     //Отримує вміст піци
     var content = pizza.content;
@@ -15,27 +14,59 @@ function getIngredientsArray(pizza) {
 
     return result;
 }
-
-   %>
-<div class="col-md-6 col-lg-4 pizza-card">
-    <div class="thumbnail">
+%>
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail  pizza-card">
+        
+        <% if(pizza.is_new) { %>
+        <span class="label label-danger label-new">НОВА</span>
+        <% } else if(pizza.is_popular) {%>
+        <span class="label label-success label-popular">ПОПУЛЯРНА</span>
+        <% } %>
+        
         <img class="pizza-icon" src="<%= pizza.icon %>" alt="Pizza">
 
-        <% if(pizza.is_new) { %>
-        <span class="label label-danger">Нова</span>
-        <% } else if(pizza.is_popular) {%>
-        <span class="label label-success">Популярна</span>
-        <% } %>
-
         <div class="caption">
-            <span class="title"><%= pizza.title %></span>
-            <div class="type"><%= pizza.type %></div>
-            <div class="description">
-                <%= getIngredientsArray(pizza).join(", ") %>
-            </div>
-        </div>
+            <h3><%= pizza.title %></h3>
+            <h5><%= pizza.size %></h5>
+            <p><%= getIngredientsArray(pizza).join(", ") %></p>
 
-        <!-- Перед тим щоб показати кнопку необхідно переконатися, що піца має великий розмір -->
-        <button class="btn btn-primary buy-big">Купити велику</button>
+            <%if(pizza.only_small){%>
+            <div class ="pannel">
+                <span class="onlyOne">
+                    <div class="size"><img src="assets/images/size-icon.svg"><%=pizza.small_size.size%></div>
+                    <div class="weight"><img src="assets/images/weight.svg"><%=pizza.small_size.weight%></div>
+                    <div class="price"><%=pizza.small_size.price%> грн</div>
+                    <a href="#" class="btn btn-primary buy-small">Купити</a>
+                </span>
+            </div>
+
+            <%}else if(pizza.only_big){%>
+            <div class ="pannel">
+                <span class="onlyOne">
+                    <div class="size"><img src="assets/images/size-icon.svg"><%=pizza.big_size.size%></div>
+                    <div class="weight"><img src="assets/images/weight.svg"><%=pizza.big_size.weight%></div>
+                    <div class="price"><%=pizza.big_size.price%> грн</div>
+                    <a href="#" class="btn btn-primary buy-big">Купити</a>
+                </span>
+            </div>
+
+            <%}else if(pizza.two_sizes){%>
+            <div class ="pannel">
+                <span class="small">
+                    <div class="size"><img src="assets/images/size-icon.svg"><%=pizza.small_size.size%></div>
+                    <div class="weight"><img src="assets/images/weight.svg"><%=pizza.small_size.weight%></div>
+                    <div class="price"><%=pizza.small_size.price%> грн</div>
+                    <a href="#" class="btn btn-primary buy-small">Купити</a>
+                </span>
+                <span class="big">
+                    <div class="size"><img src="assets/images/size-icon.svg"><%=pizza.big_size.size%></div>
+                    <div class="weight"><img src="assets/images/weight.svg"><%=pizza.big_size.weight%></div>
+                    <div class="price"><%=pizza.big_size.price%> грн</div>
+                    <a href="#" class="btn btn-primary buy-big">Купити</a>
+                </span>
+            </div>
+            <%}%>
+        </div>  
     </div>
 </div>
