@@ -63,14 +63,14 @@ $(function(){
         window.location = "order.html";
     });
     
-    if(window.location == "http://127.0.0.1:58969/Frontend/www/order.html"){
+    if($(".left-pannel").hasClass("order-html")){
         $('.minus').hide();
         $('.plus').hide();
         $('.remove').hide();
         $('.items').show();
     }
     
-    if(window.location == "http://127.0.0.1:58969/Frontend/www/index.html"){
+    if($(".left-pannel").hasClass("index-html")){
         $('.minus').show();
         $('.plus').show();
         $('.remove').show();
