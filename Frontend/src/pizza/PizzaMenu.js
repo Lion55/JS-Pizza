@@ -25,9 +25,11 @@ function showPizzaList(list) {
 
         $node.find(".buy-big").click(function(){
             PizzaCart.addToCart(pizza, PizzaCart.PizzaSize.Big);
+            return false;
         });
         $node.find(".buy-small").click(function(){
             PizzaCart.addToCart(pizza, PizzaCart.PizzaSize.Small);
+            return false;
         });
 
         $pizza_list.append($node);
